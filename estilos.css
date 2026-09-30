@@ -1,0 +1,117 @@
+body {
+    min-height: 100vh;
+    background-color: #f3f7f5;
+    background-image: linear-gradient(135deg, rgba(8, 117, 103, 0.045) 25%, transparent 25%),
+        linear-gradient(315deg, rgba(8, 117, 103, 0.035) 25%, transparent 25%);
+    background-position: 0 0, 18px 18px;
+    background-size: 36px 36px;
+    color: #172c2a;
+}
+
+.upload-shell {
+    max-width: 960px;
+}
+
+.page-heading {
+    animation: appear 420ms ease-out both;
+}
+
+.eyebrow {
+    display: inline-block;
+    margin-bottom: 0.8rem;
+    color: #087567;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+}
+
+.display-title {
+    margin-bottom: 0.6rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.2rem, 8vw, 3.7rem);
+    font-weight: 700;
+    line-height: 1.05;
+}
+
+.upload-panel {
+    overflow: hidden;
+    border: 1px solid #dce7e2;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 18px 50px rgba(25, 54, 47, 0.08);
+    animation: appear 520ms 80ms ease-out both;
+}
+
+.panel-topline {
+    height: 6px;
+    background: #087567;
+}
+
+.panel-footer {
+    border-top: 1px solid #e8efeb;
+    background: #f9fbfa;
+    color: #526560;
+    font-size: 0.875rem;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 0.4rem;
+    border-radius: 50%;
+    background: #36a478;
+}
+
+.file-input:focus {
+    border-color: #087567;
+    box-shadow: 0 0 0 0.2rem rgba(8, 117, 103, 0.16);
+}
+
+.upload-button,
+.btn-primary {
+    border-color: #087567;
+    background-color: #087567;
+}
+
+.upload-button:hover,
+.btn-primary:hover {
+    border-color: #065d53;
+    background-color: #065d53;
+}
+
+.file-list {
+    animation: appear 600ms 140ms ease-out both;
+}
+
+.file-list-items {
+    overflow: hidden;
+    border-radius: 8px;
+    border-color: #dce7e2;
+}
+
+.file-list-items .list-group-item {
+    padding: 0.85rem 1rem;
+    border-color: #e8efeb;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+    }
+}
